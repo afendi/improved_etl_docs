@@ -1,0 +1,73 @@
+site_name: Improved ETL Documentation
+site_description: Comprehensive documentation for the H3SB Improved ETL system
+site_url: https://afendi.github.io/improved_etl_docs/
+
+repo_name: improved_etl
+repo_url: https://github.com/h3sb/improved_etl
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+    - content.code.copy
+
+nav:
+  - Home: index.md
+  - Project Overview: overview.md
+  - Architecture:
+    - Overview: architecture/overview.md
+    - Service Components: architecture/service-components.md
+    - Data Flow Pipeline: architecture/data-flow.md
+    - Orchestration Patterns: architecture/orchestration.md
+    - Integration Mechanisms: architecture/integration.md
+  - API Reference:
+    - Backend API: api/backend-api.md
+    - Pipeline API: api/pipeline-api.md
+  - Data Models: data-models/schema.md
+  - Core Pipeline: pipeline/core-processing.md
+  - Workflows: workflows/orchestration.md
+  - Human Review: review/human-review.md
+  - Data Export: export/data-export.md
+  - Security: security/access-control.md
+  - Configuration: config/configuration.md
+  - Deployment: deployment/operations.md
+  - Testing: testing/strategy.md
+  - Developer Guide: developer/guide.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
