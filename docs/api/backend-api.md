@@ -10,7 +10,7 @@ The Backend API provides REST endpoints for managing the ETL system, accessing p
 
 ## Authentication
 
-The API supports JWT-based authentication. In development mode, authentication can be bypassed using the [DEV_BYPASS_JWT](file://\\wsl.localhost\Ubuntu\home\afendi\projects\improved_etl\pipeline\api\main.py#L131-L131) environment variable.
+The API supports JWT-based authentication. In development mode, authentication can be bypassed using the [DEV_BYPASS_JWT](improved_etl\pipeline\api\main.py#L131-L131) environment variable.
 
 ### Getting a Token
 
