@@ -101,7 +101,7 @@ Retrieve documents pending human review.
   "limit": 50,
   "offset": 0
 }
-
+```
 ```bash
 curl "http://localhost:8000/review/queue?limit=10&status=pending_review"
 ```
