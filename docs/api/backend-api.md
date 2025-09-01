@@ -14,13 +14,15 @@ The API supports JWT-based authentication. In development mode, authentication c
 
 ### Getting a Token
 
-POST /auth/token
+`POST /auth/token`
+```json
 Content-Type: application/json
 
 {
 "username": "your_username",
 "password": "your_password"
 }
+```
 
 
 ### Using the Token
@@ -46,6 +48,7 @@ Get overall system health status and dependency checks.
   },
   "version": "1.0.0"
 }
+```
 ```bash
 curl http://localhost:8000/health
 ```
