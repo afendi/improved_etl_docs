@@ -46,6 +46,7 @@ Get overall system health status and dependency checks.
   },
   "version": "1.0.0"
 }
+```
 ```bash
 curl http://localhost:8000/health
 ```
@@ -66,7 +67,7 @@ Endpoint: GET /health/db
   },
   "response_time_ms": 15
 }
-
+```
 ```bash
 curl http://localhost:8000/health/db
 ```
